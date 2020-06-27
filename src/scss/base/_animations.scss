@@ -1,0 +1,18 @@
+.goGray {
+    @keyframes goGray {
+        0% {filter: grayscale(0);}
+        50% {filter: grayscale(0.5);}
+        100% {filter: grayscale(1);}
+    }
+    animation: goGray .4s linear both;
+}
+
+.goFaded {
+    @keyframes goFaded {
+        0% {opacity: 1;}
+        50% {opacity: .5;}
+        100% {opacity: .3;}
+    }
+    animation: goFaded .4s linear forwards;
+}
+

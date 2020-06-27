@@ -1,0 +1,88 @@
+.recommend-box {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: end;
+    align-items: end;
+    height: 90%;
+
+    @media only screen and (max-width: $bp-medium-extra) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chef-img {
+        height: 90%;
+        margin-left: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-self: flex-end;
+
+        @media only screen and (max-width: $bp-medium-extra) {
+            height: 23rem;
+            align-self: center;
+            margin-left: 0;
+        }
+
+        @media only screen and (max-width: $bp-small-extra) {
+            height: 20rem;
+            margin-top: -2rem;
+        }
+    }
+
+    .recommendation {
+        padding-right: 8rem;
+        margin-left: -3rem;
+
+        @media only screen and (max-width: $bp-medium-extra) {
+            padding-left: 2rem;
+            margin-left: 0;
+        }
+
+        &__text {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            color: $color-brown-dark-2;
+            font-style: italic;
+            padding-bottom: 1rem;
+            text-align: end;
+
+            @media only screen and (max-width: $bp-small-extra) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            &::before {
+                content: '\00201D';
+                font-size: 4rem;
+                color: $color-brown-dark-2;
+                margin-right: .5rem;
+            }
+        }
+
+        &__name {
+            margin: 2rem 0;
+            font-size: 3rem;
+            line-height: 2rem;
+            letter-spacing: .2rem;
+            color: $color-brown-dark-1;
+            font-family: 'Herr Von Muellerhoff', cursive;
+            text-align: end;
+
+            @media only screen and (max-width: $bp-medium-extra) {
+                font-size: 2rem;
+                line-height: 2.1rem;
+                margin: 1rem 0;
+            }
+        }
+
+        &__function {
+            font-size: 1rem;
+            line-height: 1.7rem;
+            color: $color-brown-dark-2;
+            text-align: end;
+            margin-top: -.5rem;
+        }
+    }
+}

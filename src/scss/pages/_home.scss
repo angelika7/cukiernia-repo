@@ -1,0 +1,315 @@
+.container {
+    padding: 0 8rem;
+
+    @media only screen and (max-width: $bp-small-extra) {
+        padding: 0 4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 0 1.5rem;
+    }
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media only screen and (max-width: $bp-small-extra) {
+        align-items: center;
+    }
+
+    .sub-right-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: -2rem;
+        margin-top: 1.5rem;
+
+        @media only screen and (max-width: $bp-small-extra) {
+            align-items: center;
+            margin-right: 0;
+        }
+    }
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (max-width: $bp-small-extra) {
+        align-items: center;
+    }
+
+    .sub-left-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1.5rem;
+        margin-left: -2rem;
+
+        @media only screen and (max-width: $bp-small-extra) {
+            align-items: center;
+            margin-left: 0;
+        }
+    }
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-center-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.section-about {
+
+    @media only screen and (max-width: $bp-small-extra) {
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 55% 45%;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-template-columns: 50% 50%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: 36% 64%;
+        }
+
+        @media only screen and (max-width: $bp-small-extra) {
+            display: flex;
+            flex-direction: column;
+            margin-top: -4rem;
+        }
+    }
+
+    
+    &__info {
+        padding: 0 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__foto {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        @media only screen and (max-width: $bp-small-extra) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__picture {
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media only screen and (max-width: $bp-large) {
+            height: 40rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-small-extra) {
+            position: relative;
+            width: 20rem;
+            height: 10rem;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        &--1 {
+            height: 60rem;
+            top: -13rem;
+            z-index: 99;
+
+            @media only screen and (max-width: $bp-large) {
+                height: 50rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                height: 40rem;
+            }
+
+            @media only screen and (max-width: $bp-medium-extra) {
+                top: -5rem;
+            }
+
+            @media only screen and (max-width: $bp-small-extra) {
+                position: relative;
+                width: 20rem;
+                height: 15rem;
+                top: 0;
+            }
+        }
+
+        &--2 {
+            top: 10%;
+            left: 50%;
+            z-index: 100;
+
+            @media only screen and (max-width: $bp-large) {
+                top: 30%;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                left: 30%;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                left: 0;
+                top: 52%;
+                height: 36rem;
+            }
+
+            @media only screen and (max-width: $bp-small-extra) {
+                position: relative;
+                width: 20rem;
+                height: 15rem;
+                top: 0;
+            }
+        }
+    }
+}
+
+.section-prices {
+    background-color: $color-light;
+}
+
+.section-gallery {
+    @media only screen and (max-width: $bp-small-extra) {
+        margin-top: -4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-bottom: -4rem;
+    }
+}
+
+.section-gallery-content {
+    display: grid;
+    grid-template-columns: 56% 44%;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 54% 46%;
+    }
+
+    @media only screen and (max-width: $bp-medium-extra) {
+        grid-template-columns: 60% 40%;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+}
+
+.section-contact {
+
+    @media only screen and (max-width: $bp-small-extra) {
+        margin-bottom: -4rem;
+    }
+
+    .section-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 12rem;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: 25% 75%;
+        }
+
+        @media only screen and (max-width: $bp-small-extra) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__left-side {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-small) {
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+            .picture-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+
+                @media only screen and (max-width: $bp-small) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: $bp-small-extra) {
+                    flex-direction: row;
+                    width: 60rem;
+                    height: 15rem;
+                    overflow: hidden;
+                    margin-top: -3rem;
+                    margin-bottom: 5rem;
+                }
+
+                .picture {
+                    width: 70%;
+                    overflow: hidden;
+
+                    @media only screen and (max-width: $bp-small) {
+                        height: 100%;
+                    }
+
+                    @media only screen and (max-width: $bp-small-extra) {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &__right-side {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-width: $bp-small-extra) {
+                justify-content: flex-start;
+            }
+        } 
+    
+    }
+}

@@ -1,0 +1,20 @@
+.contact-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4rem;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    margin-left: 8rem;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-left: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -4rem;
+    }
+}
